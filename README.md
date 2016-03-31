@@ -1,3 +1,26 @@
+Introdution
+----------
+
+This is an 2D action adventure game engine. This Engine was developed using C++11 and SFML. The SFML library can be found at: http://www.sfml-dev.org.
+This library was tested on Mac OS X (10.9, 10.10 and 10.11).
+
+The SFML used for this project is the 2.1.
+
+How to Generate the library
+——————————————
+
+This project was created using XCODE and does not have a CMake or Makefile to compile it.
+To generate the library by hand use:
+llvm-g++ -g -std=c++11 -dynamiclib -o aagengine.dylib *.cpp  -I./ -I/SFMLPATH/include -L /SFMLPATH/lib -lsfml-graphics.2.1 -lsfml-system.2.1 -lsfml-window.2.1 -lsfml-audio.2.1
+
+To generate the binary use:
+
+llvm-g++ -g -std=c++11 ./*.cpp -L./EngineLibrary - aagengine -I./EngineLibrary  -o game -I/caminhoparaosfml/include  -L /caminhoparaosfml/lib -lsfml-graphics.2.1 -lsfml-system.2.1 -lsfml-window.2.1 -lsfml-audio.2.1
+
+The Example folder provides some code describing how to develop using the Engine.
+The Engine folder contains all the Engine files, those are not separated into folders because the original Xcode Project created virtual folders inside the project. The CMake/Makefiles are yet to be written.
+
+
 Introdução
 ----------
 
