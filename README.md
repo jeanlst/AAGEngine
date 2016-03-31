@@ -7,6 +7,7 @@ This library was tested on Mac OS X (10.9, 10.10 and 10.11).
 The SFML used for this project is the 2.1.
 
 How to Generate the library
+
 ——————————————
 
 This project was created using XCODE and does not have a CMake or Makefile to compile it.
